@@ -8,7 +8,7 @@
   
   <title>Frontend Mentor | Advice generator app</title>
   <link rel="stylesheet" href="./css/main.css">
-  <script src="./js/main.js" defer></script>
+  <script src="./js/main.js" type="module"></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -22,23 +22,28 @@
   </header>
 
   <main>
-    <h2 class="advice-id" data-advice-id>Advice #</h2>
+    <section>
+      <h2 class="advice-id" data-advice-id>Advice #<span data-advice-id-numb></span></h2>
+  
+      <p class="advice-quote" data-advice-quote>It is easy to sit up and take notice, what's difficult is getitng up and taking action.</p>
+    </section>
 
-    <p class="advice-quote" data-advice-quote></p>
+    <!-- <img src="./images/pattern-divider-desktop.svg" alt="Graphics" data-divider> -->
+    <img class="divider" src="./images/pattern-divider-mobile.svg" alt="Graphics" data-divider>
 
-    <img src="./images/pattern-divider-desktop.svg" alt="Dice Icon" data-divider>
-
-    <img src="./images/icon-dice.svg" alt="Dice Icon" class="dice-img">
+    <button type="button" class="btn" data-btn>
+      <img src="./images/icon-dice.svg" alt="Dice Icon">
+    </button>
   </main>
 
-  Advice #<!-- Advice ID goes here -->
+  <!-- Advice #Advice ID goes here -->
 
-  "<!-- Advice text goes here -->"
+  <!-- "Advice text goes here" -->
   
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/SinisaVukmirovic" target="_blank">Sinisa Vukmirovic</a>.
     </div>
   </footer>
 </body>
