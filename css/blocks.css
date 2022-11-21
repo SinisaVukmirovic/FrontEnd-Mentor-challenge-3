@@ -31,7 +31,13 @@ main {
         background-color: var(--Neon-Green);
         display: grid;
         place-items: center;
-    }
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-tap-highlight-color: transparent;
+    }    
+        .btn:active {
+            box-shadow: 0 0 40px 0 var(--Neon-Green);
+        }
 
 footer {
     position: absolute;

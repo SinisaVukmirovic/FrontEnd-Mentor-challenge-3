@@ -1,5 +1,5 @@
 import { dividerElem } from "./DOMelems.js";
-import APIurl from "./fetchFromAPI.js";
+import "./fetchFromAPI.js";
 
 const dividerImgs = {
     mobile: './images/pattern-divider-mobile.svg',

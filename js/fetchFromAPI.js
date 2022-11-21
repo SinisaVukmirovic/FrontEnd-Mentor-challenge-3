@@ -1,7 +1,8 @@
 import { btnElem } from "./DOMelems.js";
+import insertData from "./insertData.js";
 
 const APIurl = 'https://api.adviceslip.com/advice';
-export default APIurl;
+// export default APIurl;
 
 const getAdvice = async (api) => {
     const response = await fetch(api, {
@@ -11,10 +12,10 @@ const getAdvice = async (api) => {
         }
     });
 
-    const advice = await response.json();
-    // const textJokeData = await response.text();
+    const data = await response.json();
+    const { id, advice } = data.slip;
 
-    console.log(`"${advice.slip.advice}"`);
+    insertData(id, advice);
 };
 
 btnElem.addEventListener('click', () => getAdvice(APIurl));
