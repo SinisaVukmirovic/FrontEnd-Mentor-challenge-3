@@ -14,7 +14,7 @@ const getAdvice = async (api) => {
     const advice = await response.json();
     // const textJokeData = await response.text();
 
-    console.log(advice.slip.advice);
+    console.log(`"${advice.slip.advice}"`);
 };
 
 btnElem.addEventListener('click', () => getAdvice(APIurl));
