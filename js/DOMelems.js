@@ -1,7 +1,7 @@
-export { adviceIdNumb, adviceQuote, btnElem, dividerELem };
+export { adviceIdNumb, adviceQuote, btnElem, dividerElem };
 
 const adviceIdNumb = document.querySelector('[data-advice-id-numb]');
 const adviceQuote = document.querySelector('[data-data-advice-quote]');
 const btnElem = document.querySelector('[ data-btn]');
 
-const dividerELem = document.querySelector('[data-divider]');
+const dividerElem = document.querySelector('[data-divider]');

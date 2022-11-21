@@ -1,4 +1,4 @@
-import { dividerELem } from "./DOMelems.js";
+import { dividerElem } from "./DOMelems.js";
 import APIurl from "./fetchFromAPI.js";
 
 const dividerImgs = {
